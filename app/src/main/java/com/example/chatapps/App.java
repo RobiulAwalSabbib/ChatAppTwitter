@@ -24,23 +24,24 @@ public class App extends Application {
         // Add your initialization code here
 
 
-        ParseObject object = new ParseObject("ExampleObject");
-        object.put("myNumber", "123cfbgcfbcvbn");
-        object.put("myString", "robiul");
 
-        object.saveInBackground(new SaveCallback() {
-            @Override
-            public void done(ParseException ex) {
-                if (ex == null) {
-                    Log.i("Parse Result", "Successful!");
-                } else {
-                    Log.i("Parse Result", "Failed" + ex.toString());
-                }
-            }
-        });
+//        ParseObject object = new ParseObject("ExampleObject");
+//        object.put("myNumber", "123cfbgcfbcvbn");
+//        object.put("myString", "robiul AWal");
+//
+//        object.saveInBackground(new SaveCallback() {
+//            @Override
+//            public void done(ParseException ex) {
+//                if (ex == null) {
+//                    Log.i("Parse Result", "Successful!");
+//                } else {
+//                    Log.i("Parse Result", "Failed" + ex.toString());
+//                }
+//            }
+//        });
 
 
-        ParseUser.enableAutomaticUser();
+        //ParseUser.enableAutomaticUser();
 
         ParseACL defaultACL = new ParseACL();
         defaultACL.setPublicReadAccess(true);
